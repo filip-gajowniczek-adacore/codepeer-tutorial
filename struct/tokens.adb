@@ -23,6 +23,10 @@ package body Tokens is
             --  the Read routine in the appropriate Instruction, Values
             --  or Values.Operations package.
 
+            if Word = "" then
+               raise Except.User_Error;
+            end if;
+
             case Word (Word'First) is
 
                when '0' .. '9' | '.' =>
