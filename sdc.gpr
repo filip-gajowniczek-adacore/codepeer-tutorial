@@ -42,5 +42,10 @@ project Sdc is
       for Switches ("ada") use ("-static");
    end Binder;
 
+   package Codepeer is
+      for Switches use ("-level", "3");
+      for Cwe use "True";
+   end Codepeer;
+
 end Sdc;
 
