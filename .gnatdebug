@@ -1,0 +1,21 @@
++
+|&2
+--  Configure the traces format
+DEBUG.COLORS            = yes
+DEBUG.ABSOLUTE_TIME     = yes
+DEBUG.ABSOLUTE_DATE     = no
+DEBUG.ELAPSED_TIME      = no
+DEBUG.STACK_TRACE       = no
+DEBUG.LOCATION          = no
+DEBUG.ENCLOSING_ENTITY  = no
+DEBUG.COUNT             = no
+--  Always show unexpected exceptions, no matter what other traces are active
+UNEXPECTED_EXCEPTIONS   = yes
+*.EXCEPTIONS            = yes
+--  Deactivate SQL traces by default
+SQL.*                   = no
+SQL.PERF                = no
+--  Deactivate SQL-related traces in GNAThub
+POOLS                   = no
+GNATHUB.DATABASE        = no
+PYTHON                  = yes
