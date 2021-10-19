@@ -18,10 +18,10 @@ project Sdc is
       case Build is
 
          when "PRODUCTION" =>
-            for Switches ("ada") use ("-O2", "-gnatn", "-gnatwe", "-gnaty", "-gnatp");
+            for Switches ("ada") use ("-O2", "-gnatn", "-gnatwe", "-gnatp");
 
          when "DEBUG" =>
-            for Switches ("ada") use ("-gnatwe", "-gnaty", "-gnato", "-g");
+            for Switches ("ada") use ("-gnatwe", "-gnato", "-g");
             for Switches ("screen_output.adb") use ("-gnatwe", "-gnaty", "-g");
       end case;
    end Compiler;
