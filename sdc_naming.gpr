@@ -1,0 +1,25 @@
+project Sdc_Naming is
+
+   for Source_Files use ();
+
+   package Naming is
+      for Spec ("except") use "except.1.ada";
+      for Spec ("input") use "input.1.ada";
+      for Body ("input") use "input.2.ada";
+      for Spec ("instructions") use "instructions.1.ada";
+      for Body ("instructions") use "instructions.2.ada";
+      for Spec ("screen_output") use "screen_output.1.ada";
+      for Body ("screen_output") use "screen_output.2.ada";
+      for Spec ("sdc") use "sdc.1.ada";
+      for Body ("sdc") use "sdc.2.ada";
+      for Spec ("stack") use "stack.1.ada";
+      for Body ("stack") use "stack.2.ada";
+      for Spec ("tokens") use "tokens.1.ada";
+      for Body ("tokens") use "tokens.2.ada";
+      for Spec ("values.operations") use "values-operations.1.ada";
+      for Body ("values.operations") use "values-operations.2.ada";
+      for Spec ("values") use "values.1.ada";
+      for Body ("values") use "values.2.ada";
+   end Naming;
+
+end Sdc_Naming;
