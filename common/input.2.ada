@@ -184,6 +184,17 @@ package body Input is
    function Next_Word return String is
       Start : Natural;
 
+      function Convert_To_Upper return String is
+         S : String := Line (Start .. First_Char - 1);
+
+      begin
+         for I in S'Range loop
+            S (I) := Ada.Characters.Handling.To_Upper (S (I));
+         end loop;
+
+         return S;
+      end Convert_To_Upper;
+
    begin
       Input.Skip_Spaces;
 
@@ -193,17 +204,8 @@ package body Input is
       end loop;
 
       --  Now convert the string to an upper case string of characters
+      return Convert_To_Upper;
 
-      declare
-         S : String := Line (Start .. First_Char - 1);
-
-      begin
-         for I in S'Range loop
-            S (I) := Ada.Characters.Handling.To_Upper (S (I));
-         end loop;
-
-         return S;
-      end;
    end Next_Word;
 
    -------------------
