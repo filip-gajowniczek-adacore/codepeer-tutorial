@@ -1,0 +1,23 @@
+abstract project Default_Naming is
+
+   package Naming is
+      for Spec ("Except") use "except.1.ada";
+      for Spec ("Input") use "input.1.ada";
+      for Body ("Input") use "input.2.ada";
+      for Spec ("Screen_Output") use "screen_output.1.ada";
+      for Body ("Screen_Output") use "screen_output.2.ada";
+      for Spec ("Sdc") use "sdc.1.ada";
+      for Body ("Sdc") use "sdc.2.ada";
+      for Spec ("Stack") use "stack.1.ada";
+      for Body ("Stack") use "stack.2.ada";
+      for Spec ("Instructions") use "instructions.1.ada";
+      for Body ("Instructions") use "instructions.2.ada";
+      for Spec ("Tokens") use "tokens.1.ada";
+      for Body ("Tokens") use "tokens.2.ada";
+      for Spec ("Values.Operations") use "values-operations.1.ada";
+      for Body ("Values.Operations") use "values-operations.2.ada";
+      for Spec ("Values") use "values.1.ada";
+      for Body ("Values") use "values.2.ada";
+   end Naming;
+
+end Default_Naming;

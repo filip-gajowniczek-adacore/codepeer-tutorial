@@ -1,4 +1,12 @@
+with "default_naming.gpr";
+
 project Default is
+
+   for Source_List_File use "default_source_list.txt";
+   for Source_Dirs use (".", "common", "struct");
+   for Languages use ("Ada");
+
+   package Naming renames Default_Naming.Naming;
 
    for Object_Dir use "obj";
 
@@ -6,7 +14,4 @@ project Default is
       for Switches ("Ada") use ("-g", "-O2");
    end Compiler;
 
-   for Source_Dirs use (".", "common", "struct");
-
 end Default;
-
