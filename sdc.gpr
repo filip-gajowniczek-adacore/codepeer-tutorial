@@ -39,7 +39,7 @@ project Sdc is
 
    package Codepeer is
       for Switches use ("-level", "4");
-      for Server_Url use "http://192.168.56.3:8081";
+      for Server_Url use "http://jenkins-codepeer-agent:8081";
    end Codepeer;
 
 end Sdc;
