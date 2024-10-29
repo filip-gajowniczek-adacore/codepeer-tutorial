@@ -37,10 +37,9 @@ project Sdc is
       for Switches ("ada") use ("-static");
    end Binder;
 
-   package Codepeer is
-      for Switches use ("-level", "4");
+   package Analyzer is
       for Server_Url use "http://192.168.56.3:8081";
-   end Codepeer;
+   end Analyzer;
 
 end Sdc;
 
